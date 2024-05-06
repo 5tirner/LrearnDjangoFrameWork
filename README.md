@@ -24,5 +24,5 @@
     A File That Named `urls.py`.
 # Django Templates:
     * Are html File To Describe How The Result Should Be Represented.
-    * Usally The Templates Located In Folder Named `template`.
+    * Usally The Templates Located In Folder Named `templates`.
 
