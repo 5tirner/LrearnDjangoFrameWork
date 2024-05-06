@@ -4,7 +4,7 @@
     Django Following MVT(Module View Template) Pattern.
 
 - Installation: `pip install django`
-- Create Project: `django-admin startproject PRJECTNAME`
+- Create Project: `django-admin startproject PROJECTNAME`
 - Run The Server: `python3 manage.py runserver`
 - Create App: `python3 manage.py startapp APPNAME`
 
@@ -22,3 +22,7 @@
     * Consider It As Way For Navigating Around The Different Pages In Our Website.
     * When The Request Send The Choice Of The Right View Depends On The Instruction Inside
     A File That Named `urls.py`.
+# Django Templates:
+    * Are html File To Describe How The Result Should Be Represented.
+    * Usally The Templates Located In Folder Named `template`.
+
