@@ -20,9 +20,13 @@
     * Views Are Usally Put In A File That Named `views.py`.
 # Django Urls:
     * Consider It As Way For Navigating Around The Different Pages In Our Website.
-    * When The Request Send The Choice Of The Right View Depends On The Instruction Inside
-    A File That Named `urls.py`.
+    * When The Request Send The Choice Of The Right View Depends On The Instruction Inside A     File That Named `urls.py`.
 # Django Templates:
     * Are html File To Describe How The Result Should Be Represented.
     * Usally The Templates Located In Folder Named `templates`.
+# Django Models:
+    * Are Allows To Comtrole Database.
+    * Django Model Is A Table In The DataBase.
+    * Models Are Usally Put In A File Named `models.py`
+
 
