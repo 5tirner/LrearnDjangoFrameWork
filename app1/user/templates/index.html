@@ -8,5 +8,13 @@
         <button type="button" onclick="document.write('Yeeeeeeah')">Click Me!</button>
         <h2>Alert Yeeeeeeah</h2>
         <button type="reset" onclick="window.alert('Yeeeeeeah')">Click Me 2.0!</button>
+        <script>
+            function pythonScript()
+            {
+                ThePath = "./SayHey.py";
+                subprocess.run(["python", ThePath]);
+            }
+        </script>
+        <button onclick="pythonScript()">SayHey</button>
     </body>
 </html>

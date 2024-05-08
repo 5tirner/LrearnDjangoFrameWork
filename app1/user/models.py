@@ -1,6 +1,6 @@
 from django.db import models
 
-class user(models.Model):
+class   TheUser(models.Model):
     Name = models.CharField(max_length=20)
-    Age = models.CharField(max_length=3)
-    Gender = models.CharField(max_length=8)
+    age = models.CharField(max_length=3)
+    gender = models.CharField(max_length=10)
