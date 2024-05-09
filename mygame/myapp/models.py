@@ -1,3 +1,5 @@
 from django.db import models
 
-# Create your models here.
+class table1(models.Model):
+    TheString = models.CharField(max_length = 255)
+    Describ = models.CharField(max_length = 255)

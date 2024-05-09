@@ -3,8 +3,14 @@
     <head>
         <title> Templates </title>
     </head>
+    <link rel="stylesheet" type="text/html" href="./style.css">
     <body>
         <h1>This Page Render By Using Django</h1>
         <button onclick="document.write('Template')">Click</button>
+        <ul>
+            {% for i in myWords %}
+            <li>{{i.TheString}} {{i.Describ}}</li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
