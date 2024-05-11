@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body
+        {
+            background-color: rgba(17, 16, 16, 0.993);
+            color: rgba(0, 255, 255, 0.774);
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Users Names</title>
+    </head>
+    <body>
+        <h1>List Of Users</h1>
+        <ul>
+            {%for i in u%}
+            <p><a href="info/{{i.id}}">{{i.id}}- {{i.Username}}</a></p>
+            {%endfor%}
+        </ul>
+    </body>
+</html>

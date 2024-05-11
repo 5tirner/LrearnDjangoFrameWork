@@ -2,18 +2,19 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 from . import models
-def playerName(req):
-    template = loader.get_template('names.html')
-    users = models.userGameInfos.objects.all().values()
+
+def name(req):
+    template = loader.get_template('name.html')
+    usr = models.usrInfo.objects.all().values()
     context = {
-        'players': users
+        'u': usr,
     }
     return (HttpResponse(template.render(context, req)))
 
-def informations(req, id):
+def info(req, id):
+    usr = models.usrInfo.objects.get(id=id)
     template = loader.get_template('info.html')
-    infos = models.userGameInfos.objects.get(id=id)
     context = {
-        'profile': infos
+        'u': usr,
     }
     return (HttpResponse(template.render(context, req)))
