@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+        background-color: rgb(97, 84, 84);
+        color: rgb(187, 164, 35);
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{e.userName}}</title>
+</head>
+<body>
+    <h1>{{e.userName}} Informations:</h1>
+    <ul>
+        <p>Clan: {{e.clan}}</p>
+        <p>Level: {{e.level}}</p>
+        <p>Played Games: {{e.games}}</p>
+        <p>Wined Games: {{e.wins}}</p>
+        <p>Losed Games: {{e.loses}}</p>
+    </ul>
+    <button><a href="/">Back To Start</a></button>
+</body>
+</html>
