@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from django.template import loader
 from . import models
 
+def main(req):
+    template = loader.get_template('main.html')
+    return (HttpResponse(template.render()))
 def name(req):
     template = loader.get_template('name.html')
     usr = models.usrInfo.objects.all().values()
@@ -10,7 +13,6 @@ def name(req):
         'u': usr,
     }
     return (HttpResponse(template.render(context, req)))
-
 def info(req, id):
     usr = models.usrInfo.objects.get(id=id)
     template = loader.get_template('info.html')

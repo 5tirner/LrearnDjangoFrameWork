@@ -8,3 +8,6 @@ class usrInfo(models.Model):
     Wins = models.IntegerField(default = 0)
     Loses = models.IntegerField(default = 0)
     Friends = models.IntegerField(default = 0)
+
+class points(models.Model):
+    pointsAmounts = models.IntegerField(default = 0)
